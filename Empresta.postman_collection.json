@@ -1,0 +1,341 @@
+{
+	"id": "862c13f6-2ed5-fabc-133c-868a20808d54",
+	"name": "Empresta",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Covenants",
+			"description": "",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"order": [
+				"19d9a880-0289-d19b-aa1b-548ddfa0b69f"
+			],
+			"owner": "557880",
+			"folders_order": [],
+			"id": "28fe5f01-4b66-9d11-4ead-5c9f5a1ffe01"
+		},
+		{
+			"name": "Intituitions",
+			"description": "",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"order": [
+				"6b9425ae-2b06-1b1c-1708-2ff1995b6815"
+			],
+			"owner": "557880",
+			"folders_order": [],
+			"id": "a5fb06f2-8cf3-7559-2c0c-1b87a147a00f"
+		},
+		{
+			"name": "Simulations",
+			"description": "",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"order": [
+				"8910fd7a-ccef-25a4-fae4-05bef4fba216",
+				"1bc8c197-9933-7f47-6fbe-fb7cc1bb2b78",
+				"4657699c-6937-1790-f20d-edb6e11547e1",
+				"6907bb6a-3f5d-fb70-9445-56c092ffcf67",
+				"1e37000e-fb7a-d07a-fe0c-fda2390c9ab3"
+			],
+			"owner": "557880",
+			"folders_order": [],
+			"id": "3bc497fd-f3cd-d69a-bc72-68418f4216da"
+		}
+	],
+	"folders_order": [
+		"3bc497fd-f3cd-d69a-bc72-68418f4216da",
+		"28fe5f01-4b66-9d11-4ead-5c9f5a1ffe01",
+		"a5fb06f2-8cf3-7559-2c0c-1b87a147a00f"
+	],
+	"timestamp": 1618442292090,
+	"owner": "557880",
+	"public": false,
+	"requests": [
+		{
+			"id": "19d9a880-0289-d19b-aa1b-548ddfa0b69f",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8001/api/covenants",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8001/api/covenants",
+			"description": "Listing covenants",
+			"descriptionFormat": "html",
+			"time": 1618450844394,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "28fe5f01-4b66-9d11-4ead-5c9f5a1ffe01"
+		},
+		{
+			"id": "1bc8c197-9933-7f47-6fbe-fb7cc1bb2b78",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8001/api/simutations",
+			"folder": "3bc497fd-f3cd-d69a-bc72-68418f4216da",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "valor_emprestimo",
+					"value": "30500.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1618467158630,
+			"name": "http://127.0.0.1:8001/api/simutations",
+			"description": "Loan request without installment",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"responses": []
+		},
+		{
+			"id": "1e37000e-fb7a-d07a-fe0c-fda2390c9ab3",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8001/api/simutations",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"data": [
+				{
+					"key": "valor_emprestimo",
+					"value": "30500.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "instituicoes[0][name]",
+					"value": "BMG",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "instituicoes[1][name]",
+					"value": "PAN",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "convenios[0][name]",
+					"value": "INSS",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "parcela",
+					"value": "48",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://127.0.0.1:8001/api/simutations",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1618467643781,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "3bc497fd-f3cd-d69a-bc72-68418f4216da"
+		},
+		{
+			"id": "4657699c-6937-1790-f20d-edb6e11547e1",
+			"headers": "",
+			"headerData": [],
+			"url": " http://127.0.0.1:8001/api/simutations",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"data": [
+				{
+					"key": "valor_emprestimo",
+					"value": "30500.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "convenios[0][name]",
+					"value": "INSS",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "params",
+			"name": " http://127.0.0.1:8001/api/simutations",
+			"description": "Loan request with installment agreement",
+			"descriptionFormat": "html",
+			"time": 1618467143624,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "3bc497fd-f3cd-d69a-bc72-68418f4216da"
+		},
+		{
+			"id": "6907bb6a-3f5d-fb70-9445-56c092ffcf67",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8001/api/simutations",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"data": [
+				{
+					"key": "valor_emprestimo",
+					"value": "30500.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "instituicoes[0][name]",
+					"value": "OLE",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://127.0.0.1:8001/api/simutations",
+			"description": "Loan request with installment institution",
+			"descriptionFormat": "html",
+			"time": 1618467264528,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "3bc497fd-f3cd-d69a-bc72-68418f4216da"
+		},
+		{
+			"id": "6b9425ae-2b06-1b1c-1708-2ff1995b6815",
+			"headers": "",
+			"headerData": [],
+			"url": "http://127.0.0.1:8001/api/instituitions",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://127.0.0.1:8001/api/instituitions",
+			"description": "Listing institutions",
+			"descriptionFormat": "html",
+			"time": 1618450776970,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "6b9425ae-2b06-1b1c-1708-2ff1995b6815",
+			"folder": "a5fb06f2-8cf3-7559-2c0c-1b87a147a00f"
+		},
+		{
+			"id": "8910fd7a-ccef-25a4-fae4-05bef4fba216",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:8001/api/simutations",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "862c13f6-2ed5-fabc-133c-868a20808d54",
+			"data": [
+				{
+					"key": "valor_emprestimo",
+					"value": "30500.00",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				},
+				{
+					"key": "parcela",
+					"value": "48",
+					"type": "text",
+					"enabled": true,
+					"description": ""
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://127.0.0.1:8001/api/simutations",
+			"description": "Loan request with installment",
+			"descriptionFormat": "html",
+			"time": 1618466703395,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "3bc497fd-f3cd-d69a-bc72-68418f4216da"
+		}
+	]
+}
