@@ -29,33 +29,11 @@ class SimulationsController extends Controller
         try {
             $request->validated();            
             return response()->json($this->calculate->execute($request));
-            //return response()->json($request);
+          
 
         } catch (\Throwable $th) {
             return response()->json($this->generate('not_covenants', $th->getMessage(), 'Not covenants', '401'));
         }
         
-    }
-    public function list()
-    {
-        $data = [];
-        foreach($this->finder->list() as $item)
-        {
-           $data[$item->instituicao][] = [
-                   'taxa' => $item->taxaJuros,
-                   'parcelas' => $item->parcelas,
-                   'valor_parcala' => 30500.00 * $item->coeficiente,
-                   'convenio' => $item->convenio               
-           ];
- 
-        }
-        dd($data);
-        // try {
-        //     return response()->json($this->finder->list());
-
-        // } catch (\Throwable $th) {
-        //     return response()->json($this->generate('not_covenants', $th->getMessage(), 'Not covenants', '401'));
-        // }
-        
-    }
+    }    
 }
