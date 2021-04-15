@@ -48,7 +48,7 @@ class CalculateSimulation implements ICalculateSimulation
 
     private function calculate($value, $coefiente)
     {
-        return $value * $coefiente;
+        return (float)number_format($value * $coefiente, 2,'.', '');
     }
 
     private function prepareArray($data, $value)
